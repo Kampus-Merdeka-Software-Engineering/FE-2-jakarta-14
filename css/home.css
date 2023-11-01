@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", "sans-serif";
+}
+
+/* header start */
+.header {
+  position: fixed;
+  top: o;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px 5%;
+  background-color: #ccd5ae;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  z-index: 999999;
+}
+
+.logo {
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Poppins";
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  color: black;
+}
+
+.header .navbar a:hover {
+  color: rgb(73, 73, 216);
+}
+
+#icon {
+  display: none;
+}
+/* header end */
+
+/* section */
+.page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10%;
+  text-align: center;
+}
+
+.page-img{
+  width: 550;
+  height: 400px;
+}
+
+/* section end */ 
+
+/* media queries laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  #icon {
+    display: inline-block;
+  }
+}
+
+/* media queries laptop end */
+
+/* media queries tablet */
+@media (max-width: 748x) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* media queries mobile */
+@media (max-width: 450x) {
+  html {
+    font-size: 50%;
+  }
+}
