@@ -15,7 +15,7 @@
   align-items: center;
   padding: 15px 5%;
   background-color: #ccd5ae;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   z-index: 999;
   position: fixed;
   top: 0;
@@ -46,13 +46,20 @@
 
 .navbar .navbar-icon {
   display: flex;
-  margin: 0 2rem;
   color: black;
-  justify-content: space-between;
 }
 
 .navbar .navbar-icon :hover {
   color: white;
+}
+
+#search-menu,
+#save-menu,
+#inbox-menu,
+#hamburger-menu {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 #hamburger-menu {
@@ -127,6 +134,13 @@
     font-size: 75%;
   }
 
+  .page {
+    background-image: url(../img/Page.jpg);
+  }
+
+  .page img {
+    display: none;
+  }
   #hamburger-menu {
     display: inline-block;
   }
@@ -135,7 +149,7 @@
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: red;
+    background-color: #ccd5ae;
     width: 15rem;
     height: 50vh;
     transition: 0.5s;
