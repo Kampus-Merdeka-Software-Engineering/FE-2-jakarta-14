@@ -7,44 +7,59 @@
   font-family: "poppins", "sans-serif";
 }
 
-/* header start */
-.header {
-  position: fixed;
-  top: o;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 15px 5%;
-  background-color: #ccd5ae;
+/* navbar new */
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 5%;
+  background-color: #ccd5ae;
   border-bottom: 2px solid black;
-  z-index: 999999;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.logo {
-  color: black;
+.navbar .navbar-logo {
   font-size: 2rem;
-  font-weight: 900;
-  font-family: "Poppins";
+  font-weight: 700;
+  color: black;
+  font-family: "poppins";
 }
 
-.navbar a {
+.navbar .navbar-nav a {
+  position: relative;
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-left: 1rem;
+  margin-left: 0.8rem;
   color: black;
+  font-family: "poppins";
 }
 
-.header .navbar a:hover {
-  color: rgb(73, 73, 216);
+.navbar .navbar-nav a:hover {
+  color: white;
 }
 
-#icon {
+.navbar .navbar-icon {
+  display: flex;
+  margin: 0 2rem;
+  color: black;
+  justify-content: space-between;
+}
+
+.navbar .navbar-icon :hover {
+  color: white;
+}
+
+#hamburger-menu {
   display: none;
 }
-/* header end */
+
+/* navbar new end */
 
 /* section */
 .page {
@@ -56,36 +71,81 @@
   text-align: center;
 }
 
-.page-img{
-  width: 550;
-  height: 400px;
+.page-img {
+  width: 650px;
+  height: 500px;
 }
 
-/* section end */ 
+/* section end */
 
-/* media queries laptop */
-@media (max-width: 1366px) {
+/* kota tujuan */
+
+.nama,
+.promo,
+.feedback {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tujuan,
+.event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.kota {
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.iklan {
+  text-align: center;
+  margin-left: 3rem;
+}
+
+.kota p {
+  max-width: 20rem;
+  text-align: center;
+}
+
+.event img {
+  width: 380px;
+  height: 195px;
+}
+
+.active {
+  right: 0 !important;
+}
+
+/* kota tujuan end */
+
+/* media queries Tablet */
+@media (max-width: 758px) {
   html {
     font-size: 75%;
   }
 
-  #icon {
+  #hamburger-menu {
     display: inline-block;
   }
-}
 
-/* media queries laptop end */
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: red;
+    width: 15rem;
+    height: 50vh;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
 
-/* media queries tablet */
-@media (max-width: 748x) {
-  html {
-    font-size: 60%;
+  .navbar .navbar-nav a {
+    padding: 0.4rem;
+    display: block;
   }
 }
 
-/* media queries mobile */
-@media (max-width: 450x) {
-  html {
-    font-size: 50%;
-  }
-}
+/* media queries tablet end */

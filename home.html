@@ -20,18 +20,28 @@
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <!-- navbar start -->
-    <header class="header">
-      <a href="" class="logo">Dribbble</a>
-      <nav class="navbar">
-        <a href="">Pusat Bantuan</a>
-        <a href="">Unduh Aplikasi</a>
-        <a href="">Masuk</a>
-        <a href="">Buat Akun</a>
-        <div id="icon"><i data-feather="menu"></i></div>
-      </nav>
-    </header>
-    <!-- navbar end -->
+    <!-- navbar new -->
+
+    <nav class="navbar">
+      <a href="" class="navbar-logo"> Dribbble</a>
+
+      <div class="navbar-nav" id="nav-list">
+        <a href=""> Pusat Bantuan</a>
+        <a href=""> Unduh Aplikasi</a>
+        <a href=""> Masuk</a>
+        <a href=""> Buat Akun</a>
+      </div>
+
+      <div class="navbar-icon">
+        <div id="search-menu"><i data-feather="search"></i></div>
+        <div id="save-menu"><i data-feather="save"></i></div>
+        <div id="hamburger-menu"><i data-feather="menu"></i></div> 
+      </div>
+             
+
+    </nav>
+
+    <!-- navbar new end -->
 
     <!-- section start -->
     <section class="page">
@@ -43,12 +53,52 @@
       </div>
       <img src="img/Image-Home.png" alt="image" class="page-img">
     </section>
-
     <!-- section end -->
+
+    <!-- Tujuan kota -->
+
+    <section class="indo">
+      <h2 class="nama">Tujuan Destinasi</h2>   
+      <div class="tujuan">
+        <div class="kota">
+          <img src="img/jakarta.png" alt="Jakarta">
+          <h3>Jakarta</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta ab nihil in voluptatum aspernatur quaerat!</p>
+        </div>
+        <div class="kota">
+          <img src="img/bali.png" alt="Bali">
+          <h3>Bali</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repudiandae, tempore sunt non numquam cupiditate.</p>
+        </div>
+        <div class="kota">
+          <img src="img/jakarta.png" alt="yogyakarta">
+          <h3>Yogyakarta</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae deleniti recusandae quisquam, quaerat ratione consequuntur.</p>
+        </div>
+      </div>
+      <h2 class="promo">Promo Akomodasi</h2>
+      <div class="event">
+        <div class="iklan">
+          <img src="img/promo.png" alt="promo">          
+        </div>
+        <div class="iklan">
+          <img src="img/promo.png" alt="promo">          
+        </div>
+        <div class="iklan">
+          <img src="img/promo.png" alt="promo">          
+        </div>
+      </div>
+    </section>
+
+    <!-- Tujuan kota end -->
 
     <!-- js icon -->
     <script>
       feather.replace();
+    </script>
+
+    <script src="js/home.js">
+      
     </script>
     <!-- js icon end -->
   </body>
