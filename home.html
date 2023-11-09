@@ -8,16 +8,20 @@
     <!-- link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet"/>
 
     <!-- icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- AOS animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <!-- link css -->
     <link rel="stylesheet" href="css/home.css" />
+
   </head>
   <body>
     <!-- navbar new -->
@@ -25,8 +29,8 @@
     <nav class="navbar">
       <a href="#" class="navbar-logo"> Dribbble</a>
       <div class="navbar-nav" id="nav-list">
-        <a href="#kontak"> Tim Kami</a>
-        <a href="#Pusat-Bantuan"> Pusat Bantuan</a>
+        <a href="#kontak"> Profile Tim</a>
+        <a href="#testimoni"> Feedback</a>
         <button class="login" id="form-open">Login/Register</button>
       </div>
       <div class="navbar-icon">
@@ -124,7 +128,6 @@
           </form>
         </div>
       </div>
-
     </section>
 
     <!-- body end -->
@@ -166,14 +169,38 @@
 
     <!-- Tujuan kota end -->
 
+    <!-- Feedback carousel-->
+    <div class="teks" id="testimoni">
+      <h3>What guests say about Dribbble?</h3> 
+    </div>
+
+    <section class="feedback">
+      <div class="testimoni mySwiper">
+        <div class="testi-content swiper-wrapper">          
+          <div class="slide swiper-slide">            
+            <img src="img/cipung.jpg" alt="cipung">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed laboriosam quam deleniti, illum, corporis iste dolore id excepturi, debitis optio asperiores quaerat impedit enim praesentium.</p>
+            <div class="details">
+              <span class="name">Cipung</span>
+              <span class="job">Data Analyst</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    
+    <!-- Feedback carousel end -->
+
     <!-- kontak -->
 
     <section id="kontak" class="kontak">
-      <h2> Kontak Kami</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque sed porro debitis nulla ut quis culpa. Libero repudiandae cumque odio provident laborum quo officia quod sint rerum odit quam perferendis sit, sunt ab in soluta perspiciatis fugit reprehenderit ut hic, beatae fugiat excepturi atque? Rem nihil assumenda quisquam ipsum?</p>
-     
+      <h2> Profile Tim</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque sed porro debitis nulla ut quis culpa. Libero repudiandae cumque odio provident laborum quo officia quod sint rerum odit quam perferendis sit, sunt ab in soluta perspiciatis fugit reprehenderit ut hic, beatae fugiat excepturi atque? Rem nihil assumenda quisquam ipsum?</p>     
       <div class="border-card">                 
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <div class="image-content">
               <div class="card-image">
                 <img src="img/Adit.png" alt="Aditya" class="card-img">
@@ -257,27 +284,36 @@
                 <a href="https://www.instagram.com/raflirizkf/"><i data-feather="instagram"></i>
               </div>
           </div>    
-     </div>
-      
+     </div>     
+    </section> 
+
+    <section class="support">
+      <h4>Support by</h4>
+      <img src="img/KampusMerdeka.png" alt="Kampus Merdeka">
+      <img src="img/revoU.png" alt="RevoU">
+      <img src="img/html.png" alt="html">
+      <img src="img/cssLogo.png" alt="cssLogo">
+      <img src="img/js.png" alt="js">
+      <img src="img/reactJs.png" alt="reactJs">
+      <img src="img/nodeJs.png" alt="nodeJs">
+      <img src="img/sql.png" alt="sql">
+      <img src="img/github.png" alt="github">
+      <p>Created by group 14 section Jakarta</p>
     </section>
 
     <!-- kontak end -->
 
-    <!-- Mitra -->
-    <div class="bantuan" id="Pusat-Bantuan">
-      <h3>Pusat Bantuan</h3>
-      
-    </div>
-    <!-- Mitra End -->
-
-
-    <!-- js icon -->
+    <!-- javascript -->
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      feather.replace();
+      AOS.init();
     </script>
 
-    <script src="js/home.js"></script>
+    <script>feather.replace();</script>     
     
-    <!-- js icon end -->
+    <script src="js/home.js"></script>    
+    <!-- javascript end -->
   </body>
 </html>

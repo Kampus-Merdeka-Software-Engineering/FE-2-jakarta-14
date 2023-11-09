@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #efefef;
+  background-color: #f0f0f0;
 }
 
 /* navbar new */
@@ -116,7 +116,7 @@ body {
   border-radius: 14px;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.8s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .form-container .close {
@@ -199,12 +199,6 @@ body {
 /* body end */
 
 /* kota tujuan */
-
-.kontak {
-  padding-top: 5rem;
-  text-align: center;
-}
-
 .nama,
 .promo {
   text-align: center;
@@ -243,8 +237,77 @@ body {
 
 /* kota tujuan end */
 
-/* kontak */
+/* feeback carousel */
+
+.teks h3 {
+  display: block;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimoni {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testi-content {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testi-content img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.testi-content p {
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.details span {
+  display: flex;
+  flex-direction: column;
+}
+
+.details .name {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.details .job {
+  font-size: 13px;
+}
+
+/* feeback carousel end */
+
+/* Profile Tim */
+.kontak {
+  background-color: #9db2bf;
+  padding-top: 5rem;
+  text-align: center;
+  border-bottom: 3px solid white;
+}
+
 .kontak p {
+  font-size: 15px;
   text-align: center;
   max-width: 40rem;
   margin: auto;
@@ -265,7 +328,7 @@ body {
 }
 
 .card-img {
-  color: blue;
+  color: black;
   width: 280px;
   height: 280px;
   border: 4px solid;
@@ -281,20 +344,22 @@ a {
   margin-bottom: 5px;
 }
 
-/* kontak end */
-
-/* Mitra */
-
-.bantuan {
+.support {
+  color: white;
   text-align: center;
-  background-color: #ccd5ae;
+  background-color: #19376d;
 }
 
-.mitra img {
-  width: 10%;
+.support img {
+  width: 3%;
+  margin: 10px 5px;
 }
 
-/* Mitra End */
+.support p {
+  font-size: 15px;
+}
+
+/* kontak end */
 
 /* media queries Tablet */
 @media (max-width: 800px) {
@@ -309,6 +374,7 @@ a {
   .page img {
     display: none;
   }
+
   #hamburger-menu {
     display: inline-block;
     cursor: pointer;
