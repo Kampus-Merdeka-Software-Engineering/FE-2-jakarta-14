@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", "sans-serif";
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #ccd5ae;
+  border-bottom: 4px solid black;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  font-family: "poppins";
+}
+
+.navbar .navbar-nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+  color: black;
+  font-family: "poppins";
+}
+
+.navbar .navbar-nav a:hover {
+  color: white;
+}
+
+.login {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #ccd5ae;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins";
+}
+
+.login:hover {
+  color: white;
+}
+
+.navbar .navbar-icon {
+  display: flex;
+  color: black;
+}
+
+.navbar .navbar-icon :hover {
+  color: white;
+}
+
+.login {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #ccd5ae;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins";
+}
+
+.login:hover {
+  color: white;
+}
+
+#search-menu a,
+#save-menu a,
+#inbox-menu a,
+#hamburger-menu {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.active {
+  right: 0 !important;
+}
+
+/* Navbar End */
+
+.page {
+  display: flex;
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* media queries Tablet */
+@media (max-width: 800px) {
+  html {
+    font-size: 75%;
+  }
+
+   #hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ccd5ae;
+    width: 15rem;
+    height: 25vh;
+    transition: 0.5s;
+    border-bottom-left-radius: 10px;
+  }
+
+  .navbar .navbar-nav a {
+    padding: 0.4rem;
+    margin-left: 2rem;
+    display: block;
+  }
+
+  .login {
+    margin-left: 2.2rem;
+  }
+
+}
+/* media queries tablet end */

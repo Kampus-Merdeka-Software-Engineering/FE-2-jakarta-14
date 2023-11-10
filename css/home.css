@@ -85,6 +85,11 @@ body {
   display: none;
 }
 
+.active {
+  right: 0 !important;
+}
+
+
 /* navbar new end */
 
 /* body */
@@ -231,10 +236,6 @@ body {
   height: 195px;
 }
 
-.active {
-  right: 0 !important;
-}
-
 /* kota tujuan end */
 
 /* feeback carousel */
@@ -318,7 +319,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .card {
