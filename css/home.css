@@ -89,10 +89,9 @@ body {
   right: 0 !important;
 }
 
-
 /* navbar new end */
 
-/* body */
+/* login */
 .page {
   display: flex;
   min-height: 100vh;
@@ -201,7 +200,7 @@ body {
   margin-top: 10px;
 }
 
-/* body end */
+/* login end */
 
 /* kota tujuan */
 .nama,
@@ -257,7 +256,7 @@ body {
   position: relative;
   max-width: 900px;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 .testi-content {
@@ -319,7 +318,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .card {

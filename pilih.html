@@ -16,6 +16,15 @@
     <!-- icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- link css -->
     <link rel="stylesheet" href="css/pilih.css" />
   </head>
@@ -26,10 +35,10 @@
     <nav class="navbar">
       <a href="#" class="navbar-logo"> Dribbble</a>
       <div class="navbar-nav" id="nav-list">
-        <a href="#home">Home</a>
+        <a href="home.html">Home</a>
         <a href="#about">About us</a>
-        <a href="#about">Gallery</a>
-        <button class="login" id="form-open">Login/Register</button>
+        <a href="#galeri">Gallery</a>
+        <button class="login" id="open">Login/Register</button>
       </div>
       <div class="navbar-icon">
         <div id="search-menu">
@@ -48,17 +57,289 @@
     <!-- navbar new end -->
 
     <!-- body jakarta -->
+    <section class="body" id="jakarta">
+      <section class="page-jakarta">
+        <h2>Cari hotel di Jakarta, Indonesia</h2>
+      </section>
 
-    <section class="page">
-      <h2>Cari hotel di Jakarta, Indonesia</h2>
-      <div class="img-lokasi">
-        <img src="" alt="">
+      <section class="apartemen">
+        <div class="jarak-card">
+          <div class="apart">
+            <img src="img/apart1.jpg" alt="apart1" class="apart1" />
+            <h3 class="tipe">
+              Apartement 1
+              <div class="ratings">
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+              </div>
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
+              sunt!
+            </p>
+            <div class="fasilitas">
+              <h4>Main Facilities</h4>
+              <div class="main-fasilitas">
+                <img src="img/ac.png" alt="" />
+                <p>Air Conditioner</p>
+                <img src="img/badroom.png" alt="" />
+                <p>2 Bad</p>
+                <img src="img/wifi.png" alt="" />
+                <p>wifi</p>
+                <img src="img/spoon.png" alt="" />
+                <p>Restaurant</p>
+              </div>
+            </div>
+            <div class="read">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="jarak-card">
+          <div class="apart">
+            <img src="img/apart2.jpg" alt="apart1" class="apart1" />
+            <h3 class="tipe">
+              Apartement 2
+              <div class="ratings">
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+              </div>
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
+              sunt!
+            </p>
+            <div class="fasilitas">
+              <h4>Main Facilities</h4>
+              <div class="main-fasilitas">
+                <img src="img/ac.png" alt="" />
+                <p>Air Conditioner</p>
+                <img src="img/badroom.png" alt="" />
+                <p>2 Bad</p>
+                <img src="img/wifi.png" alt="" />
+                <p>wifi</p>
+                <img src="img/spoon.png" alt="" />
+                <p>Restaurant</p>
+              </div>
+            </div>
+            <div class="read">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="jarak-card">
+          <div class="apart">
+            <img src="img/apart3.jpg" alt="apart1" class="apart1" />
+            <h3 class="tipe">
+              Apartement 3
+              <div class="ratings">
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+                <img src="img/star.png" alt="" />
+              </div>
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi,
+              sunt!
+            </p>
+            <div class="fasilitas">
+              <h4>Main Facilities</h4>
+              <div class="main-fasilitas">
+                <img src="img/ac.png" alt="" />
+                <p>Air Conditioner</p>
+                <img src="img/badroom.png" alt="" />
+                <p>2 Bad</p>
+                <img src="img/wifi.png" alt="" />
+                <p>wifi</p>
+                <img src="img/spoon.png" alt="" />
+                <p>Restaurant</p>
+              </div>
+            </div>
+            <div class="read">
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="page-login">
+      <div class="form-container">
+        <i class="close" data-feather="x"></i>
+
+        <!-- login form -->
+        <div class="form login-form">
+          <form action="#">
+            <h3>Login</h3>
+
+            <div class="input-box">
+              <i data-feather="mail" class="email"></i>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+
+            <div class="input-box">
+              <i data-feather="lock" class="lock"></i>
+              <input type="password" placeholder="Enter your password" />
+            </div>
+
+            <div class="option-field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="" class="forgot-pw">Forgot Password?</a>
+            </div>
+
+            <button class="button" id="form-open">Login</button>
+
+            <div class="login-signup">
+              Don't have an account? <a href="" id="signup">Signup</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- signup form -->
+        <div class="form signup-form">
+          <form action="#">
+            <h3>Signup</h3>
+
+            <div class="input-box">
+              <i data-feather="mail" class="email"></i>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+
+            <div class="input-box">
+              <i data-feather="lock" class="lock"></i>
+              <input type="password" placeholder="Create your password" />
+            </div>
+            <div class="input-box">
+              <i data-feather="lock" class="lock"></i>
+              <input type="password" placeholder="Confim your password" />
+            </div>
+
+            <div class="option-field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="" class="forgot-pw">Forgot Password?</a>
+            </div>
+
+            <button class="button">Submit</button>
+
+            <div class="login-signup">
+              Already have an account? <a href="" id="login">Login</a>
+            </div>
+          </form>
+        </div>
       </div>
+    </section>
+
+    <section class="about-us" id="about">
+      <h2>Mengapa harus Dribbble?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        ullam, sit dignissimos quas saepe eius praesentium, quasi illum quaerat
+        eum est excepturi neque sunt alias aspernatur minima atque fugiat
+        perspiciatis!
+      </p>
+    </section>
+
+    <section>
+      <div class="image">
+        <div class="images">
+          <img src="img/review.png" alt="" />
+          <h3>Review tamu asli</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            perspiciatis.
+          </p>
+        </div>
+        <div class="images">
+          <img src="img/security.png" alt="" class="security" />
+          <h3>Keamanan 24 jam</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            perspiciatis.
+          </p>
+        </div>
+        <div class="images">
+          <img src="img/priority.png" alt="" class="priority" />
+          <h3>Beragam pilihan akomodasi</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            perspiciatis.
+          </p>
+        </div>
+        <div class="images">
+          <img src="img/payment.png" alt="" class="priority" />
+          <h3>Berbagai cara bayar yang <br />fleksibel dan mudah</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            perspiciatis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeri-caption" id="galeri">
+      <h2>Gallery about Dribbble</h2>
+    </section>
+    <section class="galeri">
+      <div class="wrapper mySwiper">
+        <div class="carousel swiper-wrapper">
+          <img class="swiper-slide" src="img/galeri1.png" alt="" />
+          <img class="swiper-slide" src="img/galeri2.png" alt="" />
+          <img class="swiper-slide" src="img/galeri3.png" alt="" />
+          <img class="swiper-slide" src="img/galeri4.png" alt="" />
+          <img class="swiper-slide" src="img/galeri5.png" alt="" />
+          <img class="swiper-slide" src="img/galeri6.png" alt="" />
+          <img class="swiper-slide" src="img/galeri7.png" alt="" />
+          <img class="swiper-slide" src="img/galeri8.png" alt="" />
+          <img class="swiper-slide" src="img/galeri9.png" alt="" />
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="support">
+      <h4>Support by</h4>
+      <img src="img/KampusMerdeka.png" alt="Kampus Merdeka" />
+      <img src="img/revoU.png" alt="RevoU" />
+      <img src="img/html.png" alt="html" />
+      <img src="img/cssLogo.png" alt="cssLogo" />
+      <img src="img/js.png" alt="js" />
+      <img src="img/reactJs.png" alt="reactJs" />
+      <img src="img/nodeJs.png" alt="nodeJs" />
+      <img src="img/sql.png" alt="sql" />
+      <img src="img/github.png" alt="github" />
+      <p>Created by group 14 section Jakarta</p>
     </section>
 
     <!-- Body jakarta end -->
 
     <!-- javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
     <script>
       feather.replace();
     </script>

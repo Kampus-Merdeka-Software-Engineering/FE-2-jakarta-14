@@ -20,7 +20,7 @@ body {
   padding: 10px 5%;
   background-color: #ccd5ae;
   border-bottom: 4px solid black;
-  z-index: 999;
+  z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
@@ -107,12 +107,297 @@ body {
 
 /* Navbar End */
 
-.page {
+/* body */
+
+.body {
+  background-image: url(../img/jakarta-landscape.jpg);
+  height: 110vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.apartemen {
   display: flex;
-  min-height: 35vh;
-  align-items: center;
   justify-content: center;
 }
+
+.jarak-card {
+  margin-right: 2rem;
+}
+
+.page-jakarta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.page-jakarta h2 {
+  margin: 8rem 0 1rem;
+}
+
+.apart {
+  margin: auto;
+  max-width: 280px;
+  background-color: white;
+  height: 73vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.apart p {
+  margin: 0 1rem;
+}
+
+.apart .apart1 {
+  padding: 7px;
+  width: 280px;
+  height: 280px;
+}
+
+.tipe {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 0;
+}
+
+.tipe img {
+  width: 15px;
+  height: 15px;
+}
+
+.fasilitas h4 {
+  margin: 0 1rem 0;
+}
+
+.fasilitas img {
+  width: 20px;
+  height: 25px;
+}
+
+.main-fasilitas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+}
+
+.main-fasilitas h4 {
+  margin-bottom: 10px;
+}
+
+.main-fasilitas img {
+  margin-left: 1rem;
+}
+
+.main-fasilitas p {
+  margin-left: 4px;
+}
+
+.read {
+  padding: 5px;
+  margin: auto;
+  max-width: 150px;
+  background-color: #0174be;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.read:hover {
+  background-color: black;
+}
+
+.read a {
+  color: white;
+  font-weight: 550;
+}
+
+.about-us {
+  padding-top: 4.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.about-us p {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.images img {
+  border-radius: 50%;
+}
+
+.images p {
+  margin: auto;
+  max-width: 300px;
+}
+
+.security {
+  width: 205px;
+  height: 165px;
+}
+
+.priority {
+  width: 165px;
+  height: 165px;
+}
+
+/* login */
+
+.login-form h3 {
+  text-align: center;
+}
+
+.page-login.show .form-container {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: white;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 998;
+  padding: 25px;
+  border-radius: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+}
+
+.form-container .close {
+  display: flex;
+}
+
+.signup-form {
+  display: none;
+}
+
+.form-container.active .signup-form {
+  display: block;
+}
+.form-container.active .login-form {
+  display: none;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #aaa;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.option-field {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 10px;
+}
+
+.form-container a {
+  color: #7d2ae8;
+  font-size: 12px;
+}
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.button {
+  background: #7d2ae8;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  border-radius: 13px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #d0a2f7;
+}
+
+.login-signup {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.galeri-caption {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.galeri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.wrapper .carousel {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.carousel img {
+  object-fit: cover;
+  width: calc(100% / 3);
+}
+
+.support {
+  color: white;
+  text-align: center;
+  background-color: #19376d;
+  border-top: 4px solid #fff;
+}
+
+.support img {
+  width: 3%;
+  margin: 10px 5px;
+}
+
+.support p {
+  font-size: 15px;
+}
+/* login end */
+
+/* body end*/
 
 /* media queries Tablet */
 @media (max-width: 800px) {
@@ -120,7 +405,7 @@ body {
     font-size: 75%;
   }
 
-   #hamburger-menu {
+  #hamburger-menu {
     display: inline-block;
     cursor: pointer;
   }
@@ -145,6 +430,5 @@ body {
   .login {
     margin-left: 2.2rem;
   }
-
 }
 /* media queries tablet end */
