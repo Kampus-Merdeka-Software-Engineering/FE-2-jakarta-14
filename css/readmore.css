@@ -107,152 +107,6 @@ body {
 
 /* Navbar End */
 
-/* body */
-
-.body {
-  background-image: url(../img/jakarta-landscape.jpg);
-  height: 110vh;
-  background-position: center;
-  background-size: cover;
-}
-
-.apartemen {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.jarak-card {
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-}
-
-.page-jakarta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.page-jakarta h2 {
-  margin: 8rem 0 1rem;
-}
-
-.apart {
-  margin: auto;
-  max-width: 280px;
-  background-color: white;
-  height: 73vh;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.apart p {
-  margin: 0 1rem;
-}
-
-.apart .apart1 {
-  padding: 7px;
-  width: 280px;
-  height: 280px;
-}
-
-.tipe {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 1rem 0;
-}
-
-.tipe img {
-  width: 15px;
-  height: 15px;
-}
-
-.fasilitas h4 {
-  margin: 0 1rem 0;
-}
-
-.fasilitas img {
-  width: 20px;
-  height: 25px;
-}
-
-.main-fasilitas {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 20px;
-}
-
-.main-fasilitas h4 {
-  margin-bottom: 10px;
-}
-
-.main-fasilitas img {
-  margin-left: 1rem;
-}
-
-.main-fasilitas p {
-  margin-left: 4px;
-}
-
-.read {
-  padding: 5px;
-  margin: auto;
-  max-width: 150px;
-  background-color: #0174be;
-  text-align: center;
-  border-radius: 15px;
-}
-
-.read:hover {
-  background-color: black;
-}
-
-.read a {
-  color: white;
-  font-weight: 550;
-}
-
-.about-us {
-  padding-top: 4.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.about-us p {
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-}
-
-.image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-.images img {
-  border-radius: 50%;
-}
-
-.images p {
-  margin: auto;
-  max-width: 300px;
-}
-
-.security {
-  width: 205px;
-  height: 165px;
-}
-
-.priority {
-  width: 165px;
-  height: 165px;
-}
-
-/* login */
-
 .login-form h3 {
   text-align: center;
 }
@@ -356,78 +210,69 @@ body {
 
 /* login end */
 
-.galeri-caption {
+/* body */
+.body {
+  margin: 8rem 0 1rem;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
-/* Galeri */
-.galeri {
+.apart {
+  margin-bottom: 2rem;
+}
+
+.apart img {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
+  margin: auto;
+  width: 700px;
+  height: 450px;
+  border-radius: 8px;
 }
 
-.wrapper {
-  position: relative;
-  max-width: 1200px;
-  overflow: hidden;
-}
-
-.wrapper .carousel {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.carousel img {
-  object-fit: cover;
-  width: calc(100% / 3);
-}
-
-.carousel-btn {
-  height: 40px;
-  width: 40px;
-  background-color: white;
-  border-radius: 50%;
-  color: black;
+.pilihan {
+  font-family: "poppins";
   font-weight: 600;
-}
-
-.carousel-btn::after,
-.carousel-btn::before {
-  font-size: 20px;
-}
-
-.support {
-  color: white;
   text-align: center;
-  background-color: #19376d;
-  border-top: 4px solid #fff;
 }
 
-.support img {
-  width: 3%;
-  margin: 10px 5px;
+.pilihan a {
+  font-size: 18px;
+  margin: 1rem;
+  color: black;
 }
 
-.support p {
-  font-size: 15px;
+.pilihan button {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "poppins";
 }
 
-/* Galeri end */
+.apart-jakarta1 h3 {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
 
-/* body end*/
+.main-fasilitas {
+  margin-left: 4rem;
+}
 
-/* media queries Tablet */
+.fasilitas img {
+  margin-right: 1.3rem;
+  width: 35px;
+  height: auto;
+}
+
+.fasilitas .spoon {
+  margin-left: 7rem;
+  height: 30px;
+  width: auto;
+}
+
+/* body end */
+
+/* media queries tablet*/
 @media (max-width: 800px) {
-  .body {
-    background-image: url(../img/jakarta-landscape.jpg);
-    height: 250vh;
-    background-position: center;
-    background-size: cover;
-  }
-
   html {
     font-size: 75%;
   }
@@ -458,4 +303,4 @@ body {
     margin-left: 2.2rem;
   }
 }
-/* media queries tablet end */
+/* media queries tablet end*/
