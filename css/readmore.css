@@ -317,12 +317,25 @@ body {
   position: fixed;
   text-align: center;
   background: white;
+  border-radius: 15px;
   padding: 25px;
-  top: 40%;
+  top: 30%;
   left: 35%;
   z-index: 998;
   opacity: 0;
   transition: all 0.4s ease-out;
+}
+
+.book-now p {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.book-now .form input,
+.phone input,
+.date input {
+  position: relative;
+  width: 80%;
 }
 
 .book-now.show {
@@ -338,6 +351,56 @@ body {
 .container .tutup {
   position: absolute;
   margin-right: 28rem;
+}
+
+.btn-book {
+  background: #7d2ae8;
+  width: 40%;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  border-radius: 13px;
+  padding: 5px 8px;
+  margin-top: 10px;
+}
+
+.btn-book:hover {
+  background: black;
+  color: white;
+}
+
+.form,
+.phone,
+.date {
+  margin-bottom: 1rem;
+}
+
+.form label {
+  margin-right: 18.6rem;
+}
+
+.phone label {
+  margin-right: 16rem;
+}
+
+.date label {
+  margin-right: 19rem;
+}
+
+.support {
+  color: white;
+  text-align: center;
+  background-color: #19376d;
+  border-top: 4px solid #fff;
+}
+
+.support img {
+  width: 3%;
+  margin: 10px 5px;
+}
+
+.support p {
+  font-size: 15px;
 }
 
 /* body end */
