@@ -26,3 +26,12 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formContainer.classList.remove("active");
 });
+
+// bookNow
+
+const formBook = document.querySelector("#book"),
+  closeBookNow = document.querySelector(".tutup"),
+  bookNow = document.querySelector(".book-now");
+
+formBook.addEventListener("click", () => bookNow.classList.add("show"));
+closeBookNow.addEventListener("click", () => bookNow.classList.remove("show"));
