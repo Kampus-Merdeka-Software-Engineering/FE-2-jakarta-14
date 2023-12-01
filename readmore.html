@@ -178,7 +178,7 @@
     </div>
   </section>
 
-  <section class="book-now">
+  <form action="/tambah" method="post" class="book-now">
     <div class="container">
       <i class="tutup" data-feather="x"></i>
       <h3>Enter your details</h3>
@@ -186,22 +186,22 @@
     <p>We will use these details to share your booking information</p>
     <div class="form">
       <label for="name">Full Name</label> <br />
-      <input type="text" placeholder="Full Name" />
+      <input type="text" placeholder="Full Name" name="full_name"  id="nama"/>
     </div>
     <div class="phone">
       <label for="phone">Phone Number</label> <br />
-      <input type="text" placeholder="Phone Number" />
+      <input type="text" placeholder="Phone Number" name="phone" id="nomer" />
     </div>
     <div class="date">
       <label for="date">check in</label> <br />
-      <input type="date" />
+      <input type="date" name="check_in" id="tanggal_masuk"/>
     </div>
     <div class="date">
       <label for="date">check out</label> <br />
-      <input type="date" />
+      <input type="date" name="check_out" id="tanggal_keluar" />
     </div>
-    <button class="btn-book">Book Now</button>
-  </section>
+    <input type="submit" class="btn-book" value="Submit"></input>
+  </form>
 
   <section class="support">
     <h4>Support by</h4>
@@ -220,11 +220,15 @@
   <!-- body end -->
 
   <!-- javaScript -->
+
   <script>
     feather.replace();
   </script>
 
   <script src="js/readmore.js"></script>
+
+  <script src="js/api.js"></script>
+
   <!-- javaScript end-->
 
   <body></body>
