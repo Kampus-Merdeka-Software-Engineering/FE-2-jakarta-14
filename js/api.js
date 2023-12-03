@@ -1,29 +1,36 @@
+const urlAPI = "http://localhost:9900/";
+
 let form = document.querySelector(".book-now");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let name = document.getElementById("nama").VALUE;
-  let nomer = document.getElementById("nomer").VALUE;
-  let tanggal_masuk = document.getElementById("tanggal_masuk").VALUE;
-  let tanggal_keluar = document.getElementById("tanggal_keluar").VALUE;
+  let name = document.getElementById("nama").value;
+  let nomer = document.getElementById("nomer").value;
+  let tanggal_masuk = document.getElementById("tanggal_masuk").value;
+  let tanggal_keluar = document.getElementById("tanggal_keluar").value;
 
-  let dataOrder = { name, nomer, tanggal_masuk, tanggal_keluar };
+  const postData = {
+    full_name: name,
+    phone: nomer,
+    check_in: tanggal_masuk,
+    check_out: tanggal_keluar,
+  };
 
-  fetch("http://localhost:9900/", {
+  const apiUrl = "http://localhost:9900/post";
+
+  fetch(apiUrl, {
     method: "POST",
     headers: {
-      "Content-Type": "Application-Json",
+      "Content-Type": "application/json",
     },
-
-    body: JSON.stringify(dataOrder),
+    body: JSON.stringify(postData),
   })
-    .then((Response) => Response.json())
-    .then((Response) => {
-      console.log(Response);
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Response:", data);
     })
-
-    .catch((err) => {
-      console.log(err);
+    .catch((error) => {
+      console.error("Error:", error);
     });
 });
