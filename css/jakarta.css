@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", "sans-serif";
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #ccd5ae;
+  border-bottom: 4px solid black;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  font-family: "poppins";
+}
+
+.navbar .navbar-nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+  color: black;
+  font-family: "poppins";
+}
+
+.navbar .navbar-nav a:hover {
+  color: white;
+}
+
+.login {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #ccd5ae;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins";
+}
+
+.login:hover {
+  color: white;
+}
+
+.navbar .navbar-icon {
+  display: flex;
+  color: black;
+}
+
+.navbar .navbar-icon :hover {
+  color: white;
+}
+
+.login {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #ccd5ae;
+  border: none;
+  cursor: pointer;
+  font-family: "poppins";
+}
+
+.login:hover {
+  color: white;
+}
+
+#search-menu a,
+#save-menu a,
+#inbox-menu a,
+#hamburger-menu {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.active {
+  right: 0 !important;
+}
+
+/* Navbar End */
+
+.login-form h3 {
+  text-align: center;
+}
+
+.page-login.show .form-container {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: white;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 998;
+  padding: 25px;
+  border-radius: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-out;
+}
+
+.form-container .close {
+  display: flex;
+}
+
+.signup-form {
+  display: none;
+}
+
+.form-container.active .signup-form {
+  display: block;
+}
+.form-container.active .login-form {
+  display: none;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #aaa;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.option-field {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 10px;
+}
+
+.form-container a {
+  color: #7d2ae8;
+  font-size: 12px;
+}
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.button {
+  background: #7d2ae8;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  border-radius: 13px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #d0a2f7;
+}
+
+.login-signup {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* login end */
+
+/* body */
+.body {
+  margin: 8rem 0 1rem;
+  text-align: center;
+}
+
+.apart {
+  margin-bottom: 2rem;
+}
+
+.apart img {
+  display: flex;
+  margin: auto;
+  width: 700px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.pilihan {
+  font-family: "poppins";
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pilihan a {
+  font-size: 18px;
+  margin: 1rem;
+  color: black;
+}
+
+.pilihan button {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "poppins";
+}
+
+.apart-jakarta1 h3 {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.main-fasilitas {
+  margin-left: 4rem;
+}
+
+.fasilitas img {
+  margin-right: 1.3rem;
+  width: 35px;
+  height: auto;
+}
+
+.fasilitas .spoon {
+  margin-left: 7rem;
+  height: 30px;
+  width: auto;
+}
+.fasilitas .swimpool {
+  margin-left: 3.5rem;
+  height: 30px;
+  width: auto;
+}
+
+.lokasi {
+  flex-wrap: wrap;
+}
+
+.lokasi h3 {
+  margin: 2rem 4rem 2rem;
+}
+
+.maps iframe {
+  margin-left: 3.5rem;
+  width: 600px;
+  height: 450px;
+  border: black solid;
+}
+
+.maps {
+  display: flex;
+}
+
+.maps .teks {
+  position: absolute;
+  margin-left: 45rem;
+  margin-top: 4rem;
+}
+
+.maps p {
+  position: absolute;
+  margin-left: 45rem;
+  margin-top: 10rem;
+}
+
+.maps .detail {
+  position: absolute;
+  margin-left: 45rem;
+  margin-top: 8rem;
+}
+
+.book-now {
+  display: none;
+  position: fixed;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  top: 30%;
+  left: 35%;
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.book-now p {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.book-now .form input,
+.phone input,
+.date input {
+  position: relative;
+  width: 80%;
+}
+
+.book-now.show {
+  display: block;
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .tutup {
+  position: absolute;
+  margin-right: 28rem;
+}
+
+.btn-book {
+  background: #7d2ae8;
+  width: 40%;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  border-radius: 13px;
+  padding: 5px 8px;
+  margin-top: 10px;
+}
+
+.btn-book:hover {
+  background: black;
+  color: white;
+}
+
+.form,
+.phone,
+.date {
+  margin-bottom: 1rem;
+}
+
+.form label {
+  margin-right: 18.6rem;
+}
+
+.phone label {
+  margin-right: 16rem;
+}
+
+.date label {
+  margin-right: 19rem;
+}
+
+.support {
+  color: white;
+  text-align: center;
+  background-color: #19376d;
+  border-top: 4px solid #fff;
+}
+
+.support img {
+  width: 3%;
+  margin: 10px 5px;
+}
+
+.support p {
+  font-size: 15px;
+}
+
+/* body end */
+
+/* media queries tablet*/
+@media (max-width: 800px) {
+  html {
+    font-size: 75%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ccd5ae;
+    width: 15rem;
+    height: 25vh;
+    transition: 0.5s;
+    border-bottom-left-radius: 10px;
+  }
+
+  .navbar .navbar-nav a {
+    padding: 0.4rem;
+    margin-left: 2rem;
+    display: block;
+  }
+
+  .login {
+    margin-left: 2.2rem;
+  }
+
+  .apart img {
+    width: 65%;
+    height: 65%;
+  }
+
+  .maps iframe {
+    width: 70%;
+    height: 70%;
+  }
+
+  .maps .detail,
+  .teks {
+    display: none;
+  }
+
+  .maps h3,
+  p {
+    display: none;
+  }
+}
+/* media queries tablet end*/
