@@ -256,7 +256,7 @@ body {
   position: relative;
   max-width: 900px;
   width: 100%;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .testi-content {
@@ -296,18 +296,17 @@ body {
   font-size: 13px;
 }
 
-.carousel-btn{
+.carousel-btn {
   height: 40px;
   width: 40px;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   color: black;
   font-weight: 600;
-  
 }
 
 .carousel-btn::after,
-.carousel-btn::before{
+.carousel-btn::before {
   font-size: 20px;
 }
 
