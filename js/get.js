@@ -1,6 +1,6 @@
 let dataUser = document.querySelector(".data");
 
-fetch("http://localhost:9900/get", {
+fetch("https://be-2-jakarta-14-production.up.railway.app/get", {
   method: "get",
 })
   .then((res) => res.json())
