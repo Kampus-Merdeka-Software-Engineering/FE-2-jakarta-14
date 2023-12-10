@@ -1,6 +1,6 @@
 let dataUser = document.querySelector(".data");
 
-fetch("http://localhost:9900/", {
+fetch("http://localhost:9900/get", {
   method: "get",
 })
   .then((res) => res.json())
@@ -19,6 +19,10 @@ fetch("http://localhost:9900/", {
               <td>${box.phone}</td>
               <td>D${box.check_in}</td>
               <td>${box.check_out}</td>
+              <td>
+              <a href="" class="edit">Edit</a>
+              <a href="" class="hapus">Delete</a>
+              </td>
             </tr>
           </tbody>
         </table>

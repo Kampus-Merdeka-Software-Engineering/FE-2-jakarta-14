@@ -2,3 +2,24 @@
   display: flex;
   justify-content: center;
 }
+
+.edit,
+.hapus {
+  text-decoration: none;
+}
+
+.hapus {
+  padding: 3px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  background-color: red;
+}
+.edit {
+  padding: 3px;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  background-color: rgb(255, 145, 0);
+}
