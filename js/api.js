@@ -1,4 +1,4 @@
-const urlAPI = "http://localhost:9900/";
+const urlAPI = "https://be-2-jakarta-14-production.up.railway.app/";
 
 let form = document.querySelector(".book-now");
 
@@ -17,7 +17,7 @@ form.addEventListener("submit", function (e) {
     check_out: tanggal_keluar,
   };
 
-  const apiUrl = "http://localhost:9900/post";
+  const apiUrl = "https://be-2-jakarta-14-production.up.railway.app/post";
 
   fetch(apiUrl, {
     method: "POST",
